@@ -1,25 +1,5 @@
-<h1>
-  {{title}}<!--interpolation section-one way binding will happen-->
-</h1>
+<app-header></app-header>
 
-<p style="background-color: darkcyan;box-shadow: chartreuse 10px 10px 5px;
-padding: 10px; margin:10px;color:black;font-weight:bold;font-size:20pt">
-Welcome to Angular Application Development Training
-</p>
-
-<p>
-  Object Details:{{obj | json}} <!--this is pipe or filter-->
-  <br/>
-  Name:{{obj.name|uppercase}}
-  <br/>
-  Name:{{obj.name|lowercase}}
-</p>
-
-<p>
-  {{show()}}
-  {{10+50}} 
-  <br/>
-  variable A:{{variablea}}
-</p>
-
-<button (click)=update()>Click Me</button>
+<!-- <app-home></app-home> -->
+<app-product-home></app-product-home>
+<app-footer></app-footer>

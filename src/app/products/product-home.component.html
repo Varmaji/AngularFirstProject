@@ -1,0 +1,24 @@
+<section class="container">
+    <h2 class="bg-success text-white text-center">Products Home</h2>
+<div class="row">
+    <section class="col-6 border">
+        <app-product-list
+        [productList]="listofProducts"
+        (selectProductEvent)="select($event)"></app-product-list>
+        
+        
+    </section>
+
+    
+    <section class="col-6 border">
+        <div class="alert alert-warning">
+            
+            
+        </div>
+        <app-product-details [model]="selectedProduct">
+
+            </app-product-details>
+    </section>
+</div>
+
+</section>
